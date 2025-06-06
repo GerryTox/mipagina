@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos | Riegos Mecanizados</title>
+
+  <!-- Fuente y animaciones -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('logos/logo1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(46, 125, 50, 0.9);
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .project-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 15px;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      color: #b9fbc0;
+      margin-bottom: 8px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #e0f2f1;
+    }
+
+    .back-button {
+      display: block;
+      width: max-content;
+      margin: 30px auto 50px;
+      padding: 12px 30px;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .back-button:hover {
+      background-color: #1b5e20;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Proyectos de Riegos Mecanizados</h1>
+  </header>
+
+  <div class="container">
+    <h2 data-aos="zoom-in">Nuestros Proyectos</h2>
+
+    <div class="projects-grid">
+
+      <!-- Proyecto 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <img src="logos/pierce1.webp" alt="Proyecto 1" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Riego pivote central </h3>
+          <p class="project-description">Automatizamos el riego de grandes parcelas con pivotes centrales optimizando el uso de agua.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image">
+          <img src="logos/pierce2.jpg" alt="Proyecto 2" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Riego avance frontal</h3>
+          <p class="project-description">Instalación de aspersores de alta presión en Sinaloa para mejorar la eficiencia del riego.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image">
+          <img src="https://via.placeholder.
+        com/600x400?text=Goteo+Frutales" alt="Proyecto 3" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Goteo para Frutales</h3>
+          <p class="project-description">Sistema de riego por goteo en huertos de aguacate en Michoacán para ahorro de agua.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back-button" data-aos="zoom-in-up">Volver al inicio</a>
+  </div>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>

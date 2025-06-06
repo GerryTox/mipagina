@@ -1,0 +1,124 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Riegos Mecanizados</title>
+  <link rel="stylesheet" href="styles2.css">
+  <footer>
+      <a href="index.html">Volver a la página principal</a>
+    </footer>
+
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #nosotros {
+    background-image: url('logos/logo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 20px;
+    color: white;
+  }
+
+  #nosotros::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65); /* MÁS oscuro para contraste */
+    z-index: 1;
+  }
+
+  .nosotros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+  }
+
+  .nosotros-texto h2,
+  .nosotros-texto p {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8), 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  .nosotros-texto h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+
+  .nosotros-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .nosotros-imagen img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  footer {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  footer a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .nosotros-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .nosotros-imagen {
+      margin-top: 30px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <section id="nosotros" data-aos="fade-up">
+    <div class="nosotros-container">
+      <div class="nosotros-texto">
+        <h2>Nosotros</h2>
+        <p>Somos una empresa 100% mexicana, dedicada al diseño, venta e instalación de sistemas de riego de la más alta calidad. Nos enorgullece ofrecer soluciones que cumplen con los estándares más rigurosos de calidad y eficiencia, siempre comprometidos con la satisfacción de nuestros clientes.</p>
+        <p>Nuestra misión es proporcionar sistemas de riego que optimicen el uso del agua, cuidando el medio ambiente y asegurando el crecimiento y productividad de cada proyecto agrícola en el que participamos.</p>
+        <p>Con una visión clara hacia el futuro, buscamos ser líderes en el mercado, innovando constantemente y adaptándonos a las necesidades de nuestros clientes para garantizar su éxito.</p>
+      </div>
+      <div class="nosotros-imagen">
+        <img src="logos/logo2.jpg" alt="Imagen de la empresa">
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>

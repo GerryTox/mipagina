@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riego por Goteo</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: url('logos/logo1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto auto 30px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 300px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #00e676;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+ <footer data-aos="fade-up">
+    <a href="servicios.html">← Volver a la página de servicios</a>
+  </footer>
+  
+<body>
+  <header data-aos="fade-down">
+    <h1>Riego por Goteo</h1>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Ventajas del Riego por Goteo</h2>
+    <p>El riego por goteo permite una distribución eficiente del agua directamente en la base de cada planta, reduciendo el desperdicio y mejorando la absorción. Ideal para zonas áridas y cultivos de alto valor.</p>
+    
+    <div class="galeria" data-aos="fade-up">
+      <img src="logos/gto1.jpg" alt="Sistema de goteo instalado">
+      <img src="logos/gto2.jpeg" alt="Cultivo con riego por goteo">
+      <img src="logos/gto3.jpeg" alt="Detalle de gotero">
+    </div>
+  </section>
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
